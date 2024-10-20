@@ -57,7 +57,10 @@ const PricingCard: React.FC<PricingCardProps> = ({
                   title === "Booster" && "text-gray-900 bg-white",
                 )}
               >
-                <Check size={8} />
+                <Check
+                  size={8}
+                  color={title === "Booster" ? "#111827" : "white"}
+                />
               </div>
               <p
                 className={clsx(
